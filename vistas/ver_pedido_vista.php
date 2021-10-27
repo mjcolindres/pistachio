@@ -5,14 +5,14 @@
  require_once ('../clases/funcion_bitacora.php');
  require_once ('../clases/funcion_visualizar.php');
  require_once ('../clases/funcion_permisos.php');
- 
- $Id_objeto=11 ; 
- 
- 
+
+ $Id_objeto=11 ;
+
+
  $visualizacion= permiso_ver($Id_objeto);
- 
- 
- 
+
+
+
  if ($visualizacion==0)
   {
     echo '<script type="text/javascript">
@@ -24,20 +24,20 @@
                                     timer: 3000
                                  });
                             window.location = "../vistas/principal_vista.php";
- 
+
                              </script>';
  }
- 
+
  else
- 
+
  {
-   //esta linea es para insertar en la bitacora que se ingresó a la pantalla ver pedido 
+   //esta linea es para insertar en la bitacora que se ingresó a la pantalla ver pedido
          bitacora::evento_bitacora($_SESSION['idUser'],$Id_objeto, 'Ingreso' , 'A ver pedidos');
- 
- 
+
+
 
   }
- 
+
 
 ?>
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
 
 
 
- 
+
 
 <body >
  <div class="content-wrapper">
@@ -57,20 +57,20 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-         
+
           </div>
-<h1> pedido</h1>
-		
-			
+<h1> pedido de PISTACCHIO</h1>
+
+
 		</div>
 
-		
+
 
 	   </div>
 	 </div>
    </section>
  </div>
 
- 
+
 </body>
 </html>

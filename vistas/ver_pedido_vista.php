@@ -59,7 +59,7 @@
           <div class="col-sm-6">
          
           </div>
-<h1> pedidos</h1>
+<h1> pedido</h1>
 		
 			
 		</div>

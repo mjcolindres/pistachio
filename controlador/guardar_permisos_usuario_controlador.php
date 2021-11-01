@@ -135,7 +135,7 @@ else
                                    showConfirmButton: false,
                                    timer: 1500
                                 });
-                               window.location.href="../vistas/crear_permiso_vista.php";
+                               window.location.href="../vistas/gestion_permiso_vista.php";
                             </script>';
 								} 
 								else 

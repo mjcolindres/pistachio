@@ -272,6 +272,8 @@ ob_end_flush();
    
         </div>
       </div><!-- /.container-fluid -->
+      <a href="../vistas/crear_permiso_vista.php" 
+      class="btn btn-primary"><i class="fas fa-plus"></i> NUEVO PERMISO</a>
     </section>
    
 

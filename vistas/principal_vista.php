@@ -211,7 +211,7 @@ if (session_status() === PHP_SESSION_NONE) {
               </li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="display:<?php echo $_SESSION['btn_productos'] ?>">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
@@ -221,8 +221,8 @@ if (session_status() === PHP_SESSION_NONE) {
             </a>
             
             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
+              <li class="nav-item"style="display:<?php echo $_SESSION['ver_productos_vista'] ?>" >
+                <a href="../vistas/ver_producto_vista.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ver Productos</p>
                 </a>

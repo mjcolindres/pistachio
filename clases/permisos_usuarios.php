@@ -19,6 +19,9 @@ $resultado_permisos = $conection->query($sql_permisos);
 /*Botones principales*/
    $_SESSION['btn_seguridad']='none';
    $_SESSION['btn_pedidos']='none';
+   $_SESSION['btn_productos']='none';
+   
+   
    
    
    
@@ -31,6 +34,7 @@ $resultado_permisos = $conection->query($sql_permisos);
    $_SESSION['permisos_vista']='none';
    $_SESSION['bitacora_vista']='none';
    $_SESSION['ver_pedidos_vista']='none';
+   $_SESSION['ver_productos_vista']='none';
   
 
 
@@ -81,6 +85,18 @@ $resultado_permisos = $conection->query($sql_permisos);
 
         }
        }
+
+
+       if ($_SESSION['pantalla']>='15' )
+       {
+        if ( $_SESSION['confirmacion']=='block') 
+        {
+         $_SESSION['btn_productos']="block";
+
+        }
+       }
+
+    
 
    //================== CODIGO PROPIO ==================================
         
@@ -147,6 +163,14 @@ $resultado_permisos = $conection->query($sql_permisos);
         }
        }
 
+       if ($_SESSION['pantalla']=='15')
+       {
+        if ( $_SESSION['confirmacion']=='block') 
+        {
+         $_SESSION['ver_productos_vista']="block";
+
+        }
+       }
     }
 
 ?>
